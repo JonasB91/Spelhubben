@@ -15,7 +15,7 @@
 <body>
 
             <!-- Navbar fixerad till toppskärmen med en headline för sidan -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Spelhubben</a>
 
@@ -49,21 +49,37 @@
     </nav>
 
     <!-- Huvudsidans innehåll -->
-    <section id="huvudinnehåll" class="vh-100 d-flex align-items-center my-5">
-      <div class="container">
+    <section id="huvudinnehåll" class="my-4">
+      <!-- Grid layout för soldat bild twitch bild och path of exile bild, även gaming text flikarna -->
+      <div class="container-md">
         <div class="row">
-          <div class="col">
-            <img class="img-fluid rounded" src="images/Soldier.jpg" alt="Bild på modernwarfare soldat gaming">
+          <div class="col-lg-4 col-md-6">
+            <img class="img-fluid rounded " src="images/Soldier.jpg" alt="Bild på modernwarfare soldat gaming">
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-6">
             <div class="display-3">Gaming</div>
             <p>
-              Vi kan komma överens om att alla älskar att spela spel!
-              Idag finns det olika plattformar för att streama olika diverse Spel.
-              Att spela spel för många skapar en rofylld omgivning, med både kreativitet och utveckling
+              Spelindustrin är gigantisk idag, det spelas och streamas spel på ett flertal olika plattformar
+              Twitch, Youtube, Kick. Jag skulle säga att vara Gaming intresserad är för alla åldrar!
+              Det är en avkoppling, ett intresse, en hobby!
+            </p>
+            <div class="display-4">Favorit spel</div>
+            <p>
+              Mina personliga favorit spel är främst Path of exile - Ett Arpg hack and slash spel.
+              Utöver det är Cities Skyline en av dom som är i toppen också! - Inom FPS spel skulle jag säga att 
+              Apex Legends och Call of Duty Modern Warfare 2 är mina absolut favoriter där!
+            </p>
+            <div class="display-5">Plattform</div>
+            <p>
+              Idag tittar jag främst på Twitch på ett flertal olika streamers oftast dagligen, då mitt spelintresse är stort sedan
+              tidig ålder. Youtube är även en bra plattform för gaming reviews m.m - 
+              Jag skulle säga att personligen så tycker jag att Gaming intresset är för alla, det är positivt i måttlig mängd för att 
+              du kan lära dig från tidig ålder ett annat språk, oftast används "Engelska" i dom flesta spel.
+              Du lär dig att samarbeta med andra, du får skapa och nå egna mål. Att hålla spelandet till en hygglig nivå utan ett beroende framkallande
+              är bara positivt för alla oavsett ålder!
             </p>
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-6">
             <img class="img-fluid rounded" src="images/twitch.jpg" alt="Bild på Twitchplattformen i en mobil">
             <img class="img-fluid rounded my-5" src="images/pathofexile.jpg" alt="Bild på pathofexile">
           </div>
@@ -71,6 +87,13 @@
       </div>
     </section>
 
+      <!-- Text i mitten av skärmen "Spel får dig att koppla av!" -->
+      <div class="container">
+        <div class="display-2 text-center my-5">
+          Låt spelvärlden få dig att koppla av!
+        </div>
+      </div>  
+    
     <!-- Spelhörnans Section -->
     <section id="gaming" class="vh-100 d-flex align-items-center">
       <div class="container-lg">
@@ -91,7 +114,34 @@
       </div> 
     </section>
 
+    
     <!-- Kontakt FOOTERN -->
+    <section id="kontakt">
+      <div class="container-lg">
+        
 
+        <!-- knapp för offcanvas till kontakt info -->
+      <button class="btn btn-secondary float-end"
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasBottom" 
+        aria-controls="offcanvasBottom">Kontakta oss</button>
+      <div class="offcanvas offcanvas-bottom bg-light" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Vi kan nås på</h5>
+      <button 
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas" 
+        aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body small fs-5 bg-light">
+        <p>Adress: Södergatan 19</p>
+        <p>Mail: Spelhörnan@telia.se</p>
+        <p>Telefon: 078-500-200</p>        
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
